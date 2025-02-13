@@ -1,0 +1,62 @@
+[class*='--cover'] img,
+[class*='--cover'] video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+[class*='--contain'] img,
+[class*='--contain'] video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 0.5rem; /* 8/16 */
+  row-gap: 1rem; /* 16/16 */
+  font-size: 0.875rem; /* 14/16 */
+  font-weight: 500;
+  line-height: normal;
+}
+.actions__link {
+  padding-block: 0.9375rem; /* 15/16 */
+  padding-inline: 1.6875rem; /* 27/16 */
+}
+.link {
+}
+.link--sign-in {
+  border-radius: 1.5rem; /* 24/16 */
+  text-decoration: underline;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.link--sign-up {
+}
+.link--bg {
+  border-radius: 1.5rem; /* 24/16 */
+  background: var(--button-bg);
+  box-shadow: var(--button-box-shadow);
+  color: var(--button-text);
+  transition: background 0.3s ease;
+}
+
+@media (any-hover: hover) {
+  [class*='--img-hover'] img {
+    transition: filter 0.3s ease;
+  }
+
+  [class*='--img-hover']:hover img {
+    filter: var(--hover-icon);
+  }
+  [class*='--img-hover']:active img {
+    filter: none;
+  }
+  .link--sign-in:hover {
+    background: var(--active-card-bg);
+    color: var(--button-text);
+  }
+  .link--bg:hover {
+    background: var(--active-card-bg);
+  }
+}
