@@ -1,7 +1,19 @@
-if (768 >= window.innerWidth) {
-  const menuToggle = document.querySelector('.icon-menu');
+window.addEventListener('load', windowLoad);
+const html = document.documentElement;
 
-  menuToggle?.addEventListener('click', () => {
-    document.documentElement.classList.toggle('open-menu');
-  });
+function windowLoad() {
+  if (992 >= window.innerWidth) {
+    document.addEventListener('click', documentActions);
+  }
+  html.classList.add('loaded');
+}
+function documentActions(e) {
+  const targetElement = e.target;
+
+  if (targetElement.closest('.icon-menu')) {
+    html.classList.toggle('menu-open');
+  }
+  targetElement.closest('.menu__link') && html.classList.contains('menu-open')
+    ? html.classList.remove('menu-open')
+    : null;
 }
