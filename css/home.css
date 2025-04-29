@@ -61,20 +61,15 @@ html.loaded {
   font-weight: 700;
 }
 .discover {
-  padding-block: 4.375rem 3.125rem; /* 50/16 */
   position: relative;
 }
 .discover__container {
   display: grid;
-  grid-template-columns: 585fr 500fr;
-  column-gap: 5.9375rem; /* 95/16 */
 }
 .discover__container::before {
   content: '';
   position: absolute;
-  inset-block-end: -6rem; /* 96/16 */
   inset-inline-start: -7.5625rem; /* 121/16 */
-  inline-size: 31.125rem; /* 498/16 */
   aspect-ratio: 498 / 272;
   background: url('../img/coffee-left-bg.png') 0 0 / contain no-repeat;
   z-index: -1;
@@ -84,35 +79,115 @@ html.loaded {
 }
 .discover__image {
   max-inline-size: 31.25rem; /* 500/16 */
-  aspect-ratio: 500 / 484;
+  aspect-ratio: 500 / 371;
   align-self: start;
 }
-.section-header__title {
+.enjoy__swiper {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+  padding-block-end: 1.5rem; /* 24/16 */
+}
+.swiper-slide__card {
+  border: 0.0625rem solid var(--card-border);
+  background: var(--card-bg);
+  text-align: center;
+  transition: background 0.5s;
+}
+.swiper-slide__article {
+}
+.swiper-slide__image {
+  max-inline-size: 17.5rem; /* 280/16 */
+  aspect-ratio: 280 / 222;
+  margin-block-end: 0.875rem; /* 14/16 */
+}
+.swiper-slide__title {
   color: var(--primary-title);
-  font-size: 3.375rem; /* 54/16 */
+  font-size: 1.375rem; /* 22/16 */
   font-weight: 700;
   line-height: normal;
+  margin-block-end: 0.375rem; /* 6/16 */
 }
-.section-header__title--margin-bottom,
-.section-header__text--margin-bottom {
-  margin-block-end: 1.875rem; /* 30/16 */
+.swiper-slide__percent {
+  margin-block-end: 0.375rem; /* 6/16 */
 }
-.section-header__text {
-  color: var(--primary-text);
-  font-size: 1.25rem; /* 20/16 */
-  line-height: 1.7; /* 170% */
+.percent {
+  display: flex;
+  justify-content: center;
+  color: var(--button-text);
+  line-height: normal;
 }
-.section-header__text p:not(:last-child) {
-  margin-block-end: 1rem; /* 16/16 */
+.percent__coffee {
+  padding-inline-end: 0.3125rem; /* 5/16 */
+  border-inline-end: 0.0625rem solid var(--button-text);
 }
-.section-header__link {
-  padding-inline: 1.5rem; /* 24/16 */
-  padding-block: 0.875rem; /* 14/16 */
+.percent__milk {
+  margin-inline-start: 0.3125rem; /* 5/16 */
+}
+.swiper-slide__price {
+  color: var(--primary-title);
+  font-size: 1.125rem; /* 18/16 */
   font-weight: 700;
+  line-height: normal;
+  margin-block-end: 1.125rem; /* 18/16 */
+}
+.swiper-slide__link {
+  font-weight: 700;
+  line-height: normal;
+  padding-block: 0.875rem; /* 14/16 */
+  padding-inline: 1.625rem; /* 26/16 */
+  display: inline-block;
+  margin-block-end: -1.5rem; /* 24/16 */
+}
+.enjoy__section-header {
+  margin-block-end: 2rem; /* 32/16 */
+}
+@media (any-hover: hover) {
+  .swiper-slide__card:hover {
+    background: var(--active-card-bg);
+  }
+  .swiper-slide__card:active {
+    background: var(--card-bg);
+  }
 }
 @media (min-width: 767.98px) {
   .hero__subtitle {
     font-size: 13.75rem; /* 220/16 */
+  }
+}
+@media (min-width: 991.98px) {
+  .discover__container {
+    column-gap: 5.9375rem; /* 95/16 */
+    grid-template-columns: 585fr 500fr;
+  }
+  .discover__container::before {
+    inset-block-end: -6rem; /* 96/16 */
+    inline-size: 31.125rem; /* 498/16 */
+  }
+  .discover,
+  .enjoy {
+    padding-block: 4.375rem; /* 50/16 */
+  }
+}
+@media (max-width: 991.98px) and (min-width: 767.98px) {
+  .discover__container {
+    column-gap: 1.5rem; /* 24/16 */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991.98px) and (min-width: 479.98px) {
+  .discover,
+  .enjoy {
+    padding-block: 2.5rem; /* 40/16 */
+  }
+}
+@media (max-width: 991.98px) {
+  .discover__container::before {
+    inset-block-end: -3rem;
+    inline-size: 24.125rem;
   }
 }
 @media (max-width: 767.98px) and (min-width: 479.98px) {
@@ -120,8 +195,18 @@ html.loaded {
     font-size: 10rem; /* 160/16 */
   }
 }
+@media (max-width: 767.98px) {
+  .discover__image {
+    grid-row: 1;
+    margin-block-end: 1rem; /* 16/16 */
+  }
+}
 @media (max-width: 479.98px) {
   .hero__subtitle {
     font-size: 7.5rem; /* 120/16 */
+  }
+  .discover,
+  .enjoy {
+    padding-block: 1.875rem; /* 30/16 */
   }
 }
