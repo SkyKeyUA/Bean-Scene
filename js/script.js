@@ -29,22 +29,29 @@ function scrollActions() {
   }
 }
 function slidersInit() {
-  const sliderListFiveItems = new Swiper('.enjoy__swiper', {
+  const sliderListFourItems = new Swiper('.enjoy__swiper', {
     slidesPerGroup: 1,
-    slidesPerView: 4,
-    spaceBetween: 18,
+    slidesPerView: 1,
+    spaceBetween: 17.333,
     loop: true,
     autoHeight: true,
     breakpoints: {
-      // when window width is >= 480px
-      320: {
-        spaceBetween: 18,
+      479: {
+        slidesPerView: 2,
       },
-      // when window width is >= 1200px
-      1200: {
+      600: {
+        slidesPerView: 3,
+      },
+      900: {
         slidesPerView: 4,
-        spaceBetween: 17.333,
       },
+    },
+  });
+  const sliderListFeedback = new Swiper('.feedback__swiper', {
+    autoHeight: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 }
