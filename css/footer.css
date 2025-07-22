@@ -1,2 +1,95 @@
 .footer {
+  padding-block: 10.125rem 4.5rem; /* 72/16 */
+  background: var(--footer-bg) url('../img/footer-bg.png') 50% 50% / cover no-repeat;
+  background-blend-mode: overlay;
+  color: var(--header-text);
+}
+.footer__container {
+  display: grid;
+  row-gap: 3.4375rem; /* 55/16 */
+}
+.footer__logo {
+  font-family: var(--second-font-family);
+  font-size: 3.375rem; /* 54/16 */
+  line-height: normal;
+  margin-block-end: 1.25rem; /* 20/16 */
+}
+.footer__text {
+  font-size: 0.875rem; /* 14/16 */
+  line-height: 1.571; /* 157.143% */
+  margin-block-end: 1.25rem; /* 20/16 */
+}
+.footer__text p:not(:last-child) {
+  margin-block-end: 0.75rem; /* 12/16 */
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.25rem; /* 20/16 */
+  row-gap: 1.25rem; /* 20/16 */
+}
+.social-list a {
+  inline-size: 1.25rem; /* 20/16 */
+  aspect-ratio: 1;
+}
+.footer__title {
+  font-size: 1.625rem; /* 26/16 */
+  font-weight: 700;
+  line-height: normal;
+  margin-block-end: 3.4375rem; /* 55/16 */
+}
+.footer__list {
+  font-size: 1.125rem; /* 18/16 */
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem; /* 24/16 */
+}
+.footer__list a {
+  position: relative;
+}
+.footer__list a::after {
+  content: '';
+  position: absolute;
+  inset-block-end: -0.125rem; /* 2/16 */
+  inset-inline-start: 0;
+  inline-size: 0;
+  block-size: 0.0625rem; /* 1/16 */
+  background: var(--header-text);
+  transition: inline-size 0.3s ease;
+}
+@media (any-hover: hover) {
+  .footer__list a:hover::after {
+    inline-size: 100%;
+  }
+}
+@media (min-width: 479.98px) and (max-width: 767.98px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 767.98px) {
+  .footer__container {
+    grid-template-columns: 380fr 136fr 134fr 322fr;
+  }
+}
+@media (min-width: 991.98px) {
+  .footer__container {
+    column-gap: 4.125rem; /* 66/16 */
+  }
+}
+@media (max-width: 991.98px) {
+  .footer__container {
+    column-gap: 3rem; /* 48/16 */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer__logo {
+    font-size: 2.1875rem; /* 35/16 */
+  }
+}
+@media (max-width: 479.98px) {
+  .footer__title {
+    margin-block-end: 1.875rem; /* 30/16 */
+  }
 }

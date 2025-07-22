@@ -23,10 +23,10 @@ function scrollActions() {
   window.addEventListener('scroll', scrollAction);
 
   function scrollAction() {
-    // Робота з шапкою
     const header = document.querySelector('.header');
     header.classList.toggle('header--scroll', scrollY > 20);
   }
+  scrollAction();
 }
 function slidersInit() {
   const sliderListFourItems = new Swiper('.enjoy__swiper', {
@@ -49,9 +49,10 @@ function slidersInit() {
   });
   const sliderListFeedback = new Swiper('.feedback__swiper', {
     autoHeight: true,
+    spaceBetween: 20,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.feedback__swiper-button-next',
+      prevEl: '.feedback__swiper-button-prev',
     },
   });
 }

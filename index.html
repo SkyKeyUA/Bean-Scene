@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/home.css">
 	<title>Bean Scene</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo">
-					<a href="#">Bean Scene</a>
+					<a aria-label="Go to Home Page" href="#">Bean Scene</a>
 				</div>
 				<nav class="header__menu menu">
 					<ul class="menu__body">
@@ -292,41 +292,156 @@
 					<div class="feedback__section-header section-header section-header--center">
 						<h2 class="section-header__title">Our coffee perfection feedback
 						</h2>
-						<div class="section-header__text section-header__text--margin-bottom">
+						<div class="section-header__text">
 							<p>Our customers has amazing things to say about us</p>
 						</div>
 					</div>
-					<div class="feedback__swiper swiper swiper-feedback">
-						<ul class="swiper-feedback__swiper-wrapper swiper-wrapper">
-							<li class="swiper-feedback__swiper-slide swiper-slide">
-								<article class="swiper-feedback__swiper-article">
-									<div class="swiper-feedback__text">
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-											has been the industry's standard
-											dummy text ever since the 1500s, when an unknown printer took a galley of type and
-											scrambled it to make a type specimen
-											book. It has survived not only five centuries, but also the leap into electronic
-											typesetting, remaining essentially
-											unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
-									</div>
-									<h3 class="swiper-feedback__name">Jonny Thomas</h3>
-									<div class="swiper-feedback__position">Project Manager</div>
-									<div class="swiper-feedback__image swiper-feedback__image--contain">
-										<img src="img/jonny-thomas.jpg" alt="Jonny Thomas">
-									</div>
-								</article>
-							</li>
-						</ul>
+					<div class="feedback__body">
+						<div class="feedback__swiper swiper swiper-feedback">
+							<ul class="swiper-feedback__swiper-wrapper swiper-wrapper">
+								<li class="swiper-feedback__swiper-slide swiper-slide">
+									<article class="swiper-feedback__swiper-article">
+										<div class="swiper-feedback__text">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+												Ipsum
+												has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen
+												book. It has survived not only five centuries, but also the leap into electronic
+												typesetting, remaining essentially
+												unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+										</div>
+										<h3 class="swiper-feedback__name">Jonny Thomas</h3>
+										<div class="swiper-feedback__position">Project Manager</div>
+										<div class="swiper-feedback__image swiper-feedback__image--contain">
+											<img src="img/jonny-thomas.jpg" alt="Jonny Thomas">
+										</div>
+									</article>
+								</li>
+								<li class="swiper-feedback__swiper-slide swiper-slide">
+									<article class="swiper-feedback__swiper-article">
+										<div class="swiper-feedback__text">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+												Ipsum
+												has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen
+												book. It has survived not only five centuries, but also the leap into electronic
+												typesetting, remaining essentially
+												unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+										</div>
+										<h3 class="swiper-feedback__name">Jonny Thomas</h3>
+										<div class="swiper-feedback__position">Project Manager</div>
+										<div class="swiper-feedback__image swiper-feedback__image--contain">
+											<img src="img/jonny-thomas.jpg" alt="Jonny Thomas">
+										</div>
+									</article>
+								</li>
+								<li class="swiper-feedback__swiper-slide swiper-slide">
+									<article class="swiper-feedback__swiper-article">
+										<div class="swiper-feedback__text">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+												Ipsum
+												has been the industry's standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and
+												scrambled it to make a type specimen
+												book. It has survived not only five centuries, but also the leap into electronic
+												typesetting, remaining essentially
+												unchanged. It was popularised in the 1960s with the release of Letraset.....</p>
+										</div>
+										<h3 class="swiper-feedback__name">Jonny Thomas</h3>
+										<div class="swiper-feedback__position">Project Manager</div>
+										<div class="swiper-feedback__image swiper-feedback__image--contain">
+											<img src="img/jonny-thomas.jpg" alt="Jonny Thomas">
+										</div>
+									</article>
+								</li>
+							</ul>
+						</div>
 						<button type="button" aria-label="Go to previous slide"
-							class="feedback__swiper-button-next swiper-button-next"></button>
+							class="feedback__swiper-button-next feedback__swiper-button"></button>
 						<button type="button" aria-label="Go to next slide"
-							class="feedback__swiper-button-prev swiper-button-prev"></button>
+							class="feedback__swiper-button-prev feedback__swiper-button"></button>
+					</div>
+				</div>
+			</section>
+			<section class="main__subscribe subscribe">
+				<div class="subscribe__body">
+					<div class="subscribe__container">
+						<div class="subscribe__section-header section-header section-header--white">
+							<h2 class="section-header__title">Subscribe to get the Latest News
+							</h2>
+							<div class="section-header__text">
+								<p>Don't miss out on our latest news, updates, tips and special offers</p>
+							</div>
+						</div>
+						<form action="#" enctype="multipart/form-data" class="subscribe__form form">
+							<div class="form__body">
+								<input class="form__input" id="input-01" name="email" placeholder required type="email">
+								<label class="form__label" for="input-01">Enter your mail*</label>
+								<button class="form__button" aria-label="submit form" type="submit">
+									Subscribe
+								</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__column">
+					<div class="footer__logo"><a aria-label="Go to Home Page" href="#">Bean Scene</a></div>
+					<div class="footer__text">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+							industry's standard
+							dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+							make a type specimen
+							book.</p>
+					</div>
+					<ul class="footer__social-list social-list social-list--contain">
+						<li><a class="footer__link--img-hover" aria-label="Go to Facebook" target="_blank" href="#"><img
+									src="img/icons/facebook.svg" alt="Facebook logo"></a></li>
+						<li><a class="footer__link--img-hover" aria-label="Go to Instagram" target="_blank" href="#"><img
+									src="img/icons/instagram.svg" alt="Instagram logo"></a>
+						</li>
+						<li><a class="footer__link--img-hover" aria-label="Go to Youtube" target="_blank" href="#"><img
+									src="img/icons/youtube.svg" alt="Youtube logo"></a></li>
+						<li><a class="footer__link--img-hover" aria-label="Go to Twitter(X)" target="_blank" href="#"><img
+									src="img/icons/twitter.svg" alt="Twitter(X) logo"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__title">About</h3>
+					<ul class="footer__list">
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">News & Blogs</a></li>
+						<li><a href="#">Help & Supports</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__title">Company</h3>
+					<ul class="footer__list">
+						<li><a href="#">How we work</a></li>
+						<li><a href="#">Terms of service</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__title">Contact Us</h3>
+					<ul class="footer__list">
+						<li>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</li>
+						<li><a href="tel:+12029182132">+1 202-918-2132</a></li>
+						<li><a href="mailto:beanscene@mail.com">beanscene@mail.com</a></li>
+						<li><a href="#">www.beanscene.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

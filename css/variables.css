@@ -9,6 +9,7 @@
   --pramary-bg: #fffefc;
 
   --header-text: #ffffff;
+  --footer-bg: #442808;
 
   --button-text: #1e1e1e;
   --button-bg: #f9c06a;
@@ -21,7 +22,7 @@
   --hero-img-bg: linear-gradient(90deg, #1e1e1e -6.88%, rgba(0, 0, 0, 0) 87.45%);
   --img-bg: #603809;
 
-  --hover-icon: brightness(0) invert(28%) sepia(78%) saturate(3802%) hue-rotate(236deg)
-    brightness(98%) contrast(97%);
+  --hover-icon: brightness(0) invert(81%) sepia(18%) saturate(1307%) hue-rotate(338deg)
+    brightness(102%) contrast(95%);
   --img-filter: brightness(0) invert(1);
 }
