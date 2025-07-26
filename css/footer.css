@@ -1,6 +1,6 @@
 .footer {
   padding-block: 10.125rem 4.5rem; /* 72/16 */
-  background: var(--footer-bg) url('../img/footer-bg.png') 50% 50% / cover no-repeat;
+  background: var(--footer-bg) url('../img/footer-bg.webp') 50% 50% / cover no-repeat;
   background-blend-mode: overlay;
   color: var(--header-text);
 }

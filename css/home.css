@@ -72,7 +72,7 @@ html.loaded {
   position: absolute;
   inset-inline-start: -7.5625rem; /* 121/16 */
   aspect-ratio: 498 / 272;
-  background: url('../img/coffee-left-bg.png') 0 0 / contain no-repeat;
+  background: url('../img/coffee-left-bg.webp') 0 0 / contain no-repeat;
   z-index: -1;
 }
 .different::before {
@@ -83,7 +83,7 @@ html.loaded {
   inline-size: 100%;
   block-size: 100%;
   aspect-ratio: 478 / 261;
-  background: url('../img/coffee-right-bg.png') 0 0 / contain no-repeat;
+  background: url('../img/coffee-right-bg.webp') 0 0 / contain no-repeat;
   z-index: -1;
 }
 .discover__section-header {
@@ -204,7 +204,7 @@ html.loaded {
   line-height: normal;
 }
 .morning {
-  background: url('../img/chance-bg.jpg') 0 0 / cover no-repeat;
+  background: url('../img/chance-bg.webp') 0 0 / cover no-repeat;
   position: relative;
 }
 .morning__beans {
@@ -330,7 +330,7 @@ html.loaded {
 }
 
 .subscribe {
-  background: url('../img/chance-bg.jpg') 0 0 / cover no-repeat;
+  background: url('../img/chance-bg.webp') 0 0 / cover no-repeat;
   position: relative;
   text-align: center;
 }
@@ -355,7 +355,7 @@ html.loaded {
   position: absolute;
   inline-size: 27.75rem; /* 444/16 */
   aspect-ratio: 444 / 358;
-  background: url('../img/cup-with-coffee.png') 0 0 / contain no-repeat;
+  background: url('../img/cup-with-coffee.webp') 0 0 / contain no-repeat;
   inset-block-end: -7.625rem; /* -122/16 */
   z-index: -1;
 }
@@ -456,14 +456,14 @@ html.loaded {
   .feedback::before {
     inline-size: 31.125rem; /* 498/16 */
     aspect-ratio: 498 / 272;
-    background: url('../img/coffee-right-bg.png') 0 0 / 100% no-repeat;
+    background: url('../img/coffee-right-bg.webp') 0 0 / 100% no-repeat;
     inset-inline-end: -3.5rem; /* -56/16 */
     inset-block-start: 6.25rem; /* 100/16 */
   }
   .feedback::after {
     inline-size: 25.875rem; /* 414/16 */
     aspect-ratio: 414 / 226;
-    background: url('../img/coffee-left-bg.png') 0 0 / 100% no-repeat;
+    background: url('../img/coffee-left-bg.webp') 0 0 / 100% no-repeat;
     inset-block-end: 5.125rem; /* 82/16 */
     inset-inline-start: -1.625rem; /* 26/16 */
     transform: rotateX(180deg);
